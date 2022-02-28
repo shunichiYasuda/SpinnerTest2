@@ -13,7 +13,9 @@
    <top>
       <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <items>
+            <Button fx:id="openBtn" mnemonicParsing="false" onAction="#openAction" text="open..." />
           <Button fx:id="execBtn" mnemonicParsing="false" onAction="#execAction" text="Exce" />
+            <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#saveAction" text="Save..." />
             <Button fx:id="quitBtn" mnemonicParsing="false" onAction="#quitAction" text="quit" />
         </items>
       </ToolBar>
