@@ -6,19 +6,19 @@
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.GenSci.tools.GrahpViewer.PrimaryController">
    <center>
-      <Canvas height="405.0" width="763.0" BorderPane.alignment="CENTER" />
+      <Canvas fx:id="canvas" height="405.0" width="763.0" BorderPane.alignment="CENTER" />
    </center>
    <top>
       <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <items>
-          <Button mnemonicParsing="false" text="Button" />
+          <Button fx:id="execBtn" mnemonicParsing="false" onAction="#execAction" text="Exce" />
+            <Button fx:id="quitBtn" mnemonicParsing="false" onAction="#quitAction" text="quit" />
         </items>
       </ToolBar>
    </top>
    <bottom>
-      <TextArea prefHeight="81.0" prefWidth="765.0" BorderPane.alignment="CENTER" />
+      <TextArea fx:id="log" prefHeight="81.0" prefWidth="765.0" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>
